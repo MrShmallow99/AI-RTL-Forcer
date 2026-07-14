@@ -188,7 +188,6 @@ Useful contributions may include:
 
 * Fixes for updated site selectors.
 * Better mixed-language handling.
-* Support for additional RTL languages.
 * Support for additional AI chat interfaces.
 * Browser compatibility improvements.
 * Performance and reliability improvements that preserve the lightweight design.
