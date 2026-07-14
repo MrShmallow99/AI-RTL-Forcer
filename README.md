@@ -179,6 +179,11 @@ Please do not include private conversation content in issue reports.
 
 * Site interface updates may break individual selectors.
 * Mixed RTL-LTR text can still behave differently depending on browser bidi rendering.
+* Model responses that are entirely or mostly English may sometimes remain right-to-left. This is intentional for now because automatically detecting and switching only English model responses to LTR in a reliable way is risky and complex. A safe implementation would need to distinguish between whole English answers, mixed Hebrew-English answers, individual English-heavy sections, lists, tables, code blocks, inline code, and partially streamed responses without accidentally flipping Hebrew or mixed content, and without adding expensive DOM processing. In these cases, RTL mode can be temporarily toggled off with:
+
+```text
+Ctrl + Shift + R
+```
 
 ## Contributing
 
